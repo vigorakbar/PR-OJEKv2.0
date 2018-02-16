@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://soap.ojekservice.grosheeran.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://soap.ojekservice.grosheeran.com/">
+
+<xs:element name="getDriverAttribute" type="tns:getDriverAttribute" />
+
+<xs:element name="getDriverAttributeResponse" type="tns:getDriverAttributeResponse" />
+
+<xs:complexType name="getDriverAttribute">
+<xs:sequence>
+<xs:element name="driverId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDriverAttributeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:driverAttribute" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="driverAttribute">
+<xs:sequence>
+<xs:element name="averageRating" type="xs:float" />
+<xs:element name="numberOfRating" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

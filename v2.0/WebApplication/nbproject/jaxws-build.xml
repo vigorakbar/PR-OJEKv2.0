@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-GetPreviousOrder" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetPreviousOrder"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetPreviousOrder" destdir="${build.generated.dir}/jax-wsCache/GetPreviousOrder" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetPreviousOrder/wsdl/localhost_8080/Ojek-Service/GetPreviousOrder.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/GetPreviousOrder?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetPreviousOrder/wsdl/localhost_8080/Ojek-Service/GetPreviousOrder.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetPreviousOrder"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetPreviousOrder">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetPreviousOrder" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetPreviousOrder"/>
+    </target>
+    <target name="wsimport-client-HideOrderFromUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/HideOrderFromUser"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/HideOrderFromUser" destdir="${build.generated.dir}/jax-wsCache/HideOrderFromUser" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/HideOrderFromUser/wsdl/localhost_8080/Ojek-Service/HideOrderFromUser.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/HideOrderFromUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/HideOrderFromUser/wsdl/localhost_8080/Ojek-Service/HideOrderFromUser.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/HideOrderFromUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/HideOrderFromUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-HideOrderFromUser" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/HideOrderFromUser"/>
+    </target>
+    <target name="wsimport-client-GetDriverHistory" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetDriverHistory"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetDriverHistory" destdir="${build.generated.dir}/jax-wsCache/GetDriverHistory" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetDriverHistory/wsdl/localhost_8080/Ojek-Service/GetDriverHistory.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/GetDriverHistory?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetDriverHistory/wsdl/localhost_8080/Ojek-Service/GetDriverHistory.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetDriverHistory"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetDriverHistory">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetDriverHistory" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetDriverHistory"/>
+    </target>
+    <target name="wsimport-client-HideOrderFromDriver" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/HideOrderFromDriver"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/HideOrderFromDriver" destdir="${build.generated.dir}/jax-wsCache/HideOrderFromDriver" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/HideOrderFromDriver/wsdl/localhost_8080/Ojek-Service/HideOrderFromDriver.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/HideOrderFromDriver?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/HideOrderFromDriver/wsdl/localhost_8080/Ojek-Service/HideOrderFromDriver.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/HideOrderFromDriver"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/HideOrderFromDriver">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-HideOrderFromDriver" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/HideOrderFromDriver"/>
+    </target>
+    <target name="wsimport-client-GetUserFromUserId" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetUserFromUserId"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetUserFromUserId" destdir="${build.generated.dir}/jax-wsCache/GetUserFromUserId" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetUserFromUserId/wsdl/localhost_8080/Identity-Service/GetUserFromUserId.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Identity-Service/GetUserFromUserId?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetUserFromUserId/wsdl/localhost_8080/Identity-Service/GetUserFromUserId.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetUserFromUserId"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetUserFromUserId">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetUserFromUserId" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/identityservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetUserFromUserId"/>
+    </target>
+    <target name="wsimport-client-AddPreferredLocation" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AddPreferredLocation"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AddPreferredLocation" destdir="${build.generated.dir}/jax-wsCache/AddPreferredLocation" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/AddPreferredLocation/wsdl/localhost_8080/Ojek-Service/AddPreferredLocation.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/AddPreferredLocation?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/AddPreferredLocation/wsdl/localhost_8080/Ojek-Service/AddPreferredLocation.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AddPreferredLocation"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AddPreferredLocation">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AddPreferredLocation" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/AddPreferredLocation"/>
+    </target>
+    <target name="wsimport-client-GetRatingFromOrderId" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetRatingFromOrderId"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetRatingFromOrderId" destdir="${build.generated.dir}/jax-wsCache/GetRatingFromOrderId" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetRatingFromOrderId/wsdl/localhost_8080/Ojek-Service/GetRatingFromOrderId.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/GetRatingFromOrderId?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetRatingFromOrderId/wsdl/localhost_8080/Ojek-Service/GetRatingFromOrderId.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetRatingFromOrderId"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetRatingFromOrderId">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetRatingFromOrderId" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetRatingFromOrderId"/>
+    </target>
+    <target name="wsimport-client-UpdateUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UpdateUser"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UpdateUser" destdir="${build.generated.dir}/jax-wsCache/UpdateUser" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/UpdateUser/wsdl/localhost_8080/Identity-Service/UpdateUser.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Identity-Service/UpdateUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/UpdateUser/wsdl/localhost_8080/Identity-Service/UpdateUser.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UpdateUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UpdateUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UpdateUser" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/identityservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/UpdateUser"/>
+    </target>
+    <target name="wsimport-client-GetDriverAttribute" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetDriverAttribute"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetDriverAttribute" destdir="${build.generated.dir}/jax-wsCache/GetDriverAttribute" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetDriverAttribute/wsdl/localhost_8080/Ojek-Service/GetDriverAttribute.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Ojek-Service/GetDriverAttribute?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetDriverAttribute/wsdl/localhost_8080/Ojek-Service/GetDriverAttribute.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetDriverAttribute"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetDriverAttribute">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetDriverAttribute" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/grosheeran/ojekservice/soap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetDriverAttribute"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-GetPreviousOrder, wsimport-client-HideOrderFromUser, wsimport-client-GetDriverHistory, wsimport-client-HideOrderFromDriver, wsimport-client-GetUserFromUserId, wsimport-client-AddPreferredLocation, wsimport-client-GetRatingFromOrderId, wsimport-client-UpdateUser, wsimport-client-GetDriverAttribute"/>
+</project>

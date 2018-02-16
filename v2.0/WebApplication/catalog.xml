@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Ojek-Service/GetPreviousOrder?wsdl" uri="src/conf/xml-resources/web-service-references/GetPreviousOrder/wsdl/localhost_8080/Ojek-Service/GetPreviousOrder.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetPreviousOrder?xsd=1" uri="src/conf/xml-resources/web-service-references/GetPreviousOrder/wsdl/localhost_8080/Ojek-Service/GetPreviousOrder.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Ojek-Service/HideOrderFromUser?wsdl" uri="src/conf/xml-resources/web-service-references/HideOrderFromUser/wsdl/localhost_8080/Ojek-Service/HideOrderFromUser.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/HideOrderFromUser?xsd=1" uri="src/conf/xml-resources/web-service-references/HideOrderFromUser/wsdl/localhost_8080/Ojek-Service/HideOrderFromUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetDriverHistory?wsdl" uri="src/conf/xml-resources/web-service-references/GetDriverHistory/wsdl/localhost_8080/Ojek-Service/GetDriverHistory.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetDriverHistory?xsd=1" uri="src/conf/xml-resources/web-service-references/GetDriverHistory/wsdl/localhost_8080/Ojek-Service/GetDriverHistory.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Ojek-Service/HideOrderFromDriver?wsdl" uri="src/conf/xml-resources/web-service-references/HideOrderFromDriver/wsdl/localhost_8080/Ojek-Service/HideOrderFromDriver.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/HideOrderFromDriver?xsd=1" uri="src/conf/xml-resources/web-service-references/HideOrderFromDriver/wsdl/localhost_8080/Ojek-Service/HideOrderFromDriver.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Identity-Service/GetUserFromUserId?wsdl" uri="src/conf/xml-resources/web-service-references/GetUserFromUserId/wsdl/localhost_8080/Identity-Service/GetUserFromUserId.wsdl"/>
+    <system systemId="http://localhost:8080/Identity-Service/GetUserFromUserId?xsd=1" uri="src/conf/xml-resources/web-service-references/GetUserFromUserId/wsdl/localhost_8080/Identity-Service/GetUserFromUserId.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Ojek-Service/AddPreferredLocation?wsdl" uri="src/conf/xml-resources/web-service-references/AddPreferredLocation/wsdl/localhost_8080/Ojek-Service/AddPreferredLocation.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/AddPreferredLocation?xsd=1" uri="src/conf/xml-resources/web-service-references/AddPreferredLocation/wsdl/localhost_8080/Ojek-Service/AddPreferredLocation.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetRatingFromOrderId?wsdl" uri="src/conf/xml-resources/web-service-references/GetRatingFromOrderId/wsdl/localhost_8080/Ojek-Service/GetRatingFromOrderId.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetRatingFromOrderId?xsd=1" uri="src/conf/xml-resources/web-service-references/GetRatingFromOrderId/wsdl/localhost_8080/Ojek-Service/GetRatingFromOrderId.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Identity-Service/UpdateUser?wsdl" uri="src/conf/xml-resources/web-service-references/UpdateUser/wsdl/localhost_8080/Identity-Service/UpdateUser.wsdl"/>
+    <system systemId="http://localhost:8080/Identity-Service/UpdateUser?xsd=1" uri="src/conf/xml-resources/web-service-references/UpdateUser/wsdl/localhost_8080/Identity-Service/UpdateUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetDriverAttribute?wsdl" uri="src/conf/xml-resources/web-service-references/GetDriverAttribute/wsdl/localhost_8080/Ojek-Service/GetDriverAttribute.wsdl"/>
+    <system systemId="http://localhost:8080/Ojek-Service/GetDriverAttribute?xsd=1" uri="src/conf/xml-resources/web-service-references/GetDriverAttribute/wsdl/localhost_8080/Ojek-Service/GetDriverAttribute.xsd_1.xsd"/>
+</catalog>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="GetPreviousOrder">
+      <implementation-class>com.grosheeran.ojekservice.soap.GetPreviousOrder</implementation-class>
+    </service>
+    <service name="GetRatingFromOrderId">
+      <implementation-class>com.grosheeran.ojekservice.soap.GetRatingFromOrderId</implementation-class>
+    </service>
+    <service name="HideOrderFromUser">
+      <implementation-class>com.grosheeran.ojekservice.soap.HideOrderFromUser</implementation-class>
+    </service>
+    <service name="HideOrderFromDriver">
+      <implementation-class>com.grosheeran.ojekservice.soap.HideOrderFromDriver</implementation-class>
+    </service>
+    <service name="GetDriverHistory">
+      <implementation-class>com.grosheeran.ojekservice.soap.GetDriverHistory</implementation-class>
+    </service>
+    <service name="AddPreferredLocation">
+      <implementation-class>com.grosheeran.ojekservice.soap.AddPreferredLocation</implementation-class>
+    </service>
+    <service name="GetDriverAttribute">
+      <implementation-class>com.grosheeran.ojekservice.soap.GetDriverAttribute</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="ValidateTokenSOAP">
+      <wsdl-url>http://localhost:8080/Identity-Service/ValidateTokenSOAP?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/Identity-Service/ValidateTokenSOAP.wsdl</local-wsdl-file>
+      <package-name>com.grosheeran.identityservice.soap</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/Identity-Service/ValidateTokenSOAP?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+  <jsr109>false</jsr109>
+</jax-ws>

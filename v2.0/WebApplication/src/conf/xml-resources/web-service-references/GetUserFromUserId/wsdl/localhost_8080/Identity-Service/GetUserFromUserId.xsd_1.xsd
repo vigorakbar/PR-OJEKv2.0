@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://soap.identityservice.grosheeran.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://soap.identityservice.grosheeran.com/">
+
+<xs:element name="getUserFromUserId" type="tns:getUserFromUserId" />
+
+<xs:element name="getUserFromUserIdResponse" type="tns:getUserFromUserIdResponse" />
+
+<xs:complexType name="getUserFromUserId">
+<xs:sequence>
+<xs:element name="userId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserFromUserIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:sequence>
+<xs:element name="driver" type="xs:int" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="image" type="xs:string" minOccurs="0" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="phoneNumber" type="xs:string" minOccurs="0" />
+<xs:element name="userId" type="xs:int" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="com.grosheeran.identityservice.soap.ValidateTokenSOAP" name="ValidateTokenSOAP" url-pattern="/ValidateTokenSOAP"/>
+  <endpoint implementation="com.grosheeran.identityservice.soap.GetUserFromUserId" name="GetUserFromUserId" url-pattern="/GetUserFromUserId"/>
+  <endpoint implementation="com.grosheeran.identityservice.soap.UpdateUser" name="UpdateUser" url-pattern="/UpdateUser"/>
+</endpoints>

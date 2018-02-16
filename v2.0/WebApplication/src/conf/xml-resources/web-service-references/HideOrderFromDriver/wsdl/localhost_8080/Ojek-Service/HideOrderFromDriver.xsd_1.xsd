@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://soap.ojekservice.grosheeran.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://soap.ojekservice.grosheeran.com/">
+
+<xs:element name="hideOrderFromDriver" type="tns:hideOrderFromDriver" />
+
+<xs:element name="hideOrderFromDriverResponse" type="tns:hideOrderFromDriverResponse" />
+
+<xs:complexType name="hideOrderFromDriver">
+<xs:sequence>
+<xs:element name="orderId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hideOrderFromDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

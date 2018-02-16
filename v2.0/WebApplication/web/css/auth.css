@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 7, 2017, 11:42:41 PM
+    Author     : Vigor Akbar
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #02702C;
+    margin-top: 40px;
+}
+
+.apps {
+    width: 380px;
+    height: 440px;
+    margin: 0 auto;
+    background: #8BBD3C;
+    border: 10px solid #02702C;
+    border-radius: 60px;
+}
+
+.form-heading {
+    margin: 0 auto;
+    display: flex;
+}
+
+.heading-left {
+    display: inline-block;
+    width: 25%;
+    padding: 45px 15px 45px 25px;
+}
+
+.heading-right {
+    display: inline-block;
+    width: 25%;
+    padding: 45px 25px 45px 15px;
+}
+
+.heading-title {
+    width: 40%;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    font-size: 2.3em;
+    font-weight: 700;
+    line-height: 30px;
+    transform: scaleY(1.6);
+}
+
+
+.heading-left hr, .heading-right hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #02702C;
+    margin: 0;
+    padding: 0 5px; 
+}
+
+.form-login {
+    margin-top: 60px;
+    padding: 0 20px;
+    font-size: 1.5em;
+}
+
+.form-login .form-group {
+    margin-bottom: 10px; 
+}
+
+.form-login .form-group label {
+    width: 30%;
+    display: inline-block;
+}
+
+.form-login .form-group input {
+    width: 60%;
+}
+
+.form-login .form-group input[type=text], .form-login .form-group input[type=password] {
+    height: 30px;
+    border: 1px solid black;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+.form-login .action {
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.form-login .action .register {
+    float: left;
+}
+
+.form-login .action .register a {
+    font-size: 0.6em;
+    color: #453333;
+}
+
+.form-login .action .submit {
+    float: right;
+}
+
+.form-login .action .submit input[type=submit] {
+    padding: 4px 28px;
+    background: #82D800;
+    border: 3px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #453333;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-signup {
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.form-signup .form-group {
+    margin-bottom: 3px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.form-signup .form-group label {
+    width: 40%;
+    display: inline-block;
+}
+
+.form-signup .form-group input {
+    width: 53%;
+}
+
+.form-signup .form-group input[type=text], .form-signup .form-group input[type=password] {
+    height: 23px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.form-signup .form-group input#username, .form-signup .form-group input#email {
+    width: 47%;
+}
+
+.form-signup .form-group span i {
+    display: none;
+}
+
+.form-signup .form-group span i:nth-of-type(2) {
+    color: #B33A3A;
+}
+
+.form-signup input[type=checkbox] {
+    margin-top: 15px;
+}
+
+.form-signup .action {
+    margin-top: 30px;
+}
+
+.form-signup .action .login {
+    float: left;
+}
+
+.form-signup .action .login a {
+    font-size: 0.8em;
+    color: #453333;
+}
+
+.form-signup .action .submit {
+    float: right;
+    margin-right: 10px;
+}
+
+.form-signup .action .submit input[type=submit] {
+    padding: 10px 5px;
+    background: #82D800;
+    border: 3px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #453333;
+    border-radius: 10px;
+    width: 100%;
+}

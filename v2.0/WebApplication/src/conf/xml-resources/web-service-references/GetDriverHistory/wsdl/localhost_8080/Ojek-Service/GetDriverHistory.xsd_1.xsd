@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://soap.ojekservice.grosheeran.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://soap.ojekservice.grosheeran.com/">
+
+<xs:element name="Order" type="tns:order" />
+
+<xs:element name="getDriverHistory" type="tns:getDriverHistory" />
+
+<xs:element name="getDriverHistoryResponse" type="tns:getDriverHistoryResponse" />
+
+<xs:complexType name="getDriverHistory">
+<xs:sequence>
+<xs:element name="token" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDriverHistoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:order" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="order">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="userId" type="xs:int" />
+<xs:element name="driverId" type="xs:int" />
+<xs:element name="timestamp" type="xs:dateTime" minOccurs="0" />
+<xs:element name="pickingpoint" type="xs:string" />
+<xs:element name="destination" type="xs:string" />
+<xs:element name="isComplete" type="xs:boolean" />
+<xs:element name="isVisibleByUser" type="xs:boolean" />
+<xs:element name="isVisibleByDriver" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
